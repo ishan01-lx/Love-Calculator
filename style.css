@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url(background.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-clip: content-box;
+    
+
+}
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    opacity: 0; /* Start with invisible text */
+    animation: fadeIn 2s ease-in forwards; /* Apply fadeIn animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        color: blueviolet;
+    }
+    100% {
+        opacity: 1; /* Fade to fully visible */
+    }
+}
+
+
+
+
+.max-width {
+    height: 47vh;
+    width: 50vh;
+    position: absolute;
+    top:30%;
+    border-radius: 7px;
+    
+
+}
+
+.input-name {
+    text-align: center;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.input-name .input {
+    height: 6vh;
+    width: 33vh;
+    font-size: 20px;
+    border-radius: 9px;
+    border: none;
+}
+
+.input-name .input:hover {
+    border: 2px solid orchid;
+}
+.input-check {
+    display: flex;
+    justify-content: space-around;
+    width: 30vh;
+}
+
+.input-check button {
+    background-color: burlywood;
+    border-radius: 9px;
+    height: 4vh;
+    width: 12vh;
+}
+
+.input-check button:hover{
+    background-color: #6A0572;
+    color: white;
+}
+.display {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    color: palevioletred;
+}
